@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Notes</title>
+</head>
+
+<body>
+    <textarea id="noteText" cols="30" rows="10" placeholder="Marry Arnavit"></textarea>
+    <input type="date" id="noteDate">
+    <input type="time" id="noteTime">
+    <button onclick="addNote(noteText.value, noteDate.value, noteTime.value)">Add Note</button>
+
+    <table id="notesArea">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>DATE</th>
+                <th>TIME</th>
+                <th>REMOVE</th>
+            </tr>
+        </thead>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
