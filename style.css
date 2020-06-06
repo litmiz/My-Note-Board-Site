@@ -25,14 +25,14 @@ textarea {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-input {
+#addForm input {
     margin-bottom: 10px;
     border: 1px solid black;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     font-size: 14px;
 }
 
-button {
+#addform button {
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -40,6 +40,21 @@ button {
     width: 80px;
     height: 30px;
     font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+#searchForm {
+    padding-bottom: 10px;
+}
+
+#searchForm input {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+#searchForm button {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    border: 1px solid black;
 }
 
 .fullNote {
@@ -49,6 +64,23 @@ button {
     display: inline-block;
 }
 
+.noteInside {
+    padding-top: 20%;
+}
+
 .fullNote p {
-    padding-top: 15%;
+    padding-top: 5%;
+}
+
+.delBtn {
+    display: none;
+}
+
+.fullNote:hover .delBtn {
+    display: block;
+    background-color: transparent;
+    width: 25px;
+    float: left;
+    margin-left: 7%;
+    margin-top: 15%;
 }
