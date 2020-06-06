@@ -8,7 +8,6 @@ class Note {
     }
 }
 
-
 // Event listeners:
 document.getElementById("addBtn").addEventListener("click", function () {
     addNote(document.getElementById("noteText").value, document.getElementById("noteDate").value, document.getElementById("noteTime").value);
@@ -95,7 +94,6 @@ function addNoteToDom(note) {
         fullNote.remove();
     });
 }
-
 
 // Load notes from local storage
 const notesJson = localStorage.getItem("notes");
