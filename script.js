@@ -1,6 +1,4 @@
-//---------------------------------//
-//           Note class            //
-//---------------------------------//
+//           Note class            //  
 class Note {
     constructor(name, date, time) {
         this.name = name;
@@ -10,9 +8,7 @@ class Note {
 }
 
 
-//---------------------------------//
 //         Notes Operations        //
-//---------------------------------//
 function addNote(name, date, time) {
     const note = new Note(name, date, time);
     notes.push(note);
@@ -41,9 +37,7 @@ function addNoteToDom(note) {
 }
 
 
-//---------------------------------//
 //  Load notes from local storage  //
-//---------------------------------//
 const notesJson = localStorage.getItem("notes");
 if (notesJson === null) {
     notes = [];
