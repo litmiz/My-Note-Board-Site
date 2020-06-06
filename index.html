@@ -11,49 +11,16 @@
 <body>
     <h1>My Note Board</h1>
     <form id="searchForm">
-        <input type="text" placeholder="Search Note">
+        <input type="text" id="searchText" placeholder="Search Note">
         <button type="button" id="seaBtn">Search</button>
     </form>
     <form id="addForm">
         <textarea id="noteText" cols="22" rows="6" placeholder="Note Details" required></textarea>
         <input type="date" id="noteDate" placeholder="Note destination date" required>
         <input type="time" id="noteTime" placeholder="Note destination time" required>
-        <button type="button" onclick="addNote(noteText.value, noteDate.value, noteTime.value)">Add Note</button>
+        <button id="addBtn" type="button">Add Note</button>
     </form>
-    <!-- <table id="notesArea">
-        <thead>
-            <tr>
-                <th>NAME</th>
-                <th>DATE</th>
-                <th>TIME</th>
-                <th>REMOVE</th>
-            </tr>
-        </thead>
-    </table> -->
-    <div class="fullNote">
-        <button class="delBtn" type="button">X</button>
-        <section class="noteInside">
-            <p class="noteHeader">להציע לארנבית</p>
-            <p class="noteDesDate">06/06/2020</p>
-            <p class="noteDesTime">19:01:00</p>
-        </section>
-    </div>
-    <div class="fullNote">
-        <button class="delBtn" type="button">X</button>
-        <section class="noteInside">
-            <p class="noteHeader">ללדת את אריאל</p>
-            <p class="noteDesDate">06/06/2020</p>
-            <p class="noteDesTime">19:01:00</p>
-        </section>
-    </div>
-    <div class="fullNote">
-        <button class="delBtn" type="button">X</button>
-        <section class="noteInside">
-            <p class="noteHeader">I DOOOOOOOOOOOOOO I DOOOOOOOO</p>
-            <p class="noteDesDate">06/06/2020</p>
-            <p class="noteDesTime">19:01:00</p>
-        </section>
-    </div>
+    <section id="notesSection"></section>
     <script src="script.js"></script>
 </body>
 
