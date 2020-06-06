@@ -9,12 +9,14 @@
 </head>
 
 <body>
-    <textarea id="noteText" cols="30" rows="10" placeholder="Marry Arnavit"></textarea>
-    <input type="date" id="noteDate">
-    <input type="time" id="noteTime">
-    <button onclick="addNote(noteText.value, noteDate.value, noteTime.value)">Add Note</button>
-
-    <table id="notesArea">
+    <h1>My Note Board</h1>
+    <form>
+        <textarea id="noteText" cols="22" rows="6" placeholder="Note Details"></textarea>
+        <input type="date" id="noteDate" placeholder="Note destination date">
+        <input type="time" id="noteTime" placeholder="Note destination time">
+        <button onclick="addNote(noteText.value, noteDate.value, noteTime.value)">Add Note</button>
+    </form>
+    <!-- <table id="notesArea">
         <thead>
             <tr>
                 <th>NAME</th>
@@ -23,7 +25,12 @@
                 <th>REMOVE</th>
             </tr>
         </thead>
-    </table>
+    </table> -->
+    <div class="fullNote">
+        <p class="noteHeader">להציע לארנבית</p>
+        <p class="noteDesDate">06/06/2020</p>
+        <p class="noteDesTime">19:01:00</p>
+    </div>
     <script src="script.js"></script>
 </body>
 
